@@ -134,13 +134,15 @@ section {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 100vh;
     text-align: left;
-  }
+    
+}
   
-  .servicios-video iframe {
+.servicios-video iframe {
     margin: 0 auto;
-  }
+    width: 100%; /* Usar el 100% del ancho del contenedor */
+    max-width: 640px;
+}
   
   
 .servicios-text p {
@@ -241,12 +243,17 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    padding-bottom: 50px;
 }
   
 .AboutTheUs-video h2{
     text-align: left;
     padding-right: 30px;
+}
+.AboutTheUs-video iframe {
+    margin: 0 auto;
+    width: 100%; /* Usar el 100% del ancho del contenedor */
+    max-width: 640px; /* Establecer un ancho máximo para evitar que se vuelva demasiado grande */
 }
 #team-info {
     width: 100%;
@@ -292,9 +299,9 @@ section {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
     text-align: center;
-    padding: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
   
 .AboutTheTeam-video h2 {
@@ -302,7 +309,11 @@ section {
     margin-right: auto;
     font-size: 30px;
 }
-  
+.AboutTheTeam-video iframe {
+    margin: 0 auto;
+    width: 100%; /* Usar el 100% del ancho del contenedor */
+    max-width: 640px; /* Establecer un ancho máximo para evitar que se vuelva demasiado grande */
+}
       
 .card-wrapper {
     display: flex;
@@ -439,6 +450,7 @@ li a:hover {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    width: 100;
 }
 
 .contact-col div .fa-solid{
@@ -952,6 +964,32 @@ footer {
         right: 0;
     }
 
+    .servicios-video {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .servicios-video iframe {
+        max-width: 80%; /* Reducir el ancho máximo a medida que la pantalla se hace más pequeña */
+        
+    }
+    .AboutTheUs-video {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+      
+    .AboutTheUs-video h2 {
+        text-align: center;
+        padding-right: 0;
+    }
+    .AboutTheUs-video iframe {
+        max-width: 80%; /* Reducir el ancho máximo a medida que la pantalla se hace más pequeña */
+    }
+
+    .AboutTheTeam-video iframe {
+        max-width: 80%; /* Reducir el ancho máximo a medida que la pantalla se hace más pequeña */  
+    }
     .mapa-img img {
         width: 80%;
     }
@@ -1205,6 +1243,9 @@ footer {
 
 
 @media (max-width: 480px) {
+    .servicios-video iframe {
+        max-width: 60%; /* Reducir aún más el ancho máximo en pantallas más pequeñas */
+    }
     #AboutTheTeam .AboutTheTeam-text {
 
         display: flex;
