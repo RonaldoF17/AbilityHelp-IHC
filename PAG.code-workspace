@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../PROBANDO PAG/HTML"
+		},
+		{
+			"path": "../../../../PROBANDO PAG/AVANCE RODRI/HTML/.vscode"
+		},
+		{
+			"path": "../../../../PROBANDO PAG/AVANCE RODRI/ULTIMO AVANCE RODRI/HTML/.vscode"
+		},
+		{
+			"path": "../../../../PROBANDO PAG/AVANCE DE R/HTML/.vscode"
+		},
+		{
+			"path": "../../HTML/AVANZANDO COD"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PAG"
+	}
+}
