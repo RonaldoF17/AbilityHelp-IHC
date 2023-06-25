@@ -479,12 +479,13 @@ li a:hover {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 8px;
+    color: black;
 }
 
 .btnEnviar{
     position: relative;
     padding: 10px 22px;
-    background: #010922;
+    background: #051136;
     border-radius: 6px;
     color: #E6E6E6;
     border: none;
@@ -1243,9 +1244,6 @@ footer {
 
 
 @media (max-width: 480px) {
-    .servicios-video iframe {
-        max-width: 60%; /* Reducir aún más el ancho máximo en pantallas más pequeñas */
-    }
     #AboutTheTeam .AboutTheTeam-text {
 
         display: flex;
